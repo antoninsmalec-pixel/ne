@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moje AI Learning App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Moje AI Learning App</h1>
+    <p>Nauč se základy AI interaktivně.</p>
+  </header>
+
+  <main>
+    <section id="courses">
+      <h2>Kurzy</h2>
+      <button onclick="openLesson(1)">Lekce 1: Neuronové sítě</button>
+      <button onclick="openLesson(2)">Lekce 2: Trénování modelů</button>
+    </section>
+
+    <section id="lesson1" class="lesson" style="display:none;">
+      <h2>Lekce 1: Co je neuronová síť</h2>
+      <p>Neuronová síť je model inspirovaný mozkem. Učí se rozpoznávat vzory z dat.</p>
+
+      <h3>Python Demo:</h3>
+      <textarea id="python1">print("Ahoj, AI svět!")</textarea>
+      <button onclick="runCode('python1','output1')">Spustit kód</button>
+      <pre id="output1"></pre>
+
+      <button onclick="backToCourses()">Zpět na kurzy</button>
+    </section>
+
+    <section id="lesson2" class="lesson" style="display:none;">
+      <h2>Lekce 2: Trénování modelů</h2>
+      <p>Trénování modelu znamená učit neuronovou síť rozpoznávat vzory pomocí dat.</p>
+
+      <h3>Python Demo:</h3>
+      <textarea id="python2">for i in range(5): print("Trénování krok", i+1)</textarea>
+      <button onclick="runCode('python2','output2')">Spustit kód</button>
+      <pre id="output2"></pre>
+
+      <button onclick="backToCourses()">Zpět na kurzy</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Moje AI Learning App</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
