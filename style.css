@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  color: #111;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background: #111827;
+  color: white;
+  padding: 40px 0;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+textarea {
+  width: 80%;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.lesson {
+  margin-top: 20px;
+}
